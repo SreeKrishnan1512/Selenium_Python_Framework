@@ -22,7 +22,7 @@ def setup(request):
     browserName=request.config.getoption("browserName") #Using this key we can retrieve value that is chrome
     #if config.getoption("chrome"):
     if browserName == "chrome":
-            chrome_path="C:/Users/psaik/Desktop/Python_Selenium_Framework2/chromedriver-win64/chromedriver-win64/chromedriver.exe" 
+            chrome_path="your chrome path" 
             serive_object= Service(chrome_path)
             driver= webdriver.Chrome(service=serive_object)
         
